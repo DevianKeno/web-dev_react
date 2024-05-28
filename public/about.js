@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 500 + index * 200); // Delay to ensure the animation starts after the page load, staggered
     });
 
-    var cards = document.querySelectorAll(".card");
+    var cards = document.querySelectorAll(".box");
     cards.forEach(function(card) {
         card.addEventListener("mouseenter", function() {
             card.style.backgroundColor = "#f0f8ff"; // Change to a light blue color
