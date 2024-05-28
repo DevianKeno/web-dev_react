@@ -69,6 +69,24 @@ body {
     color: white;
 }
 
+.m-cont {
+    padding: 20px;
+}
+
+.m-card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    padding: 20px;
+}
+
+.m-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .footer {
     padding-top: 50px;
     text-align: center;
