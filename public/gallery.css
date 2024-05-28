@@ -5,6 +5,11 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    background-image: url('images/img7.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 code {
@@ -158,4 +163,72 @@ code {
     to {
         transform: rotate(360deg);
     }
+}
+
+.slideshow-container {
+    position: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mySlides {
+    display: none;
+   
+}
+
+.img-container {
+    margin-top: 95px;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    height: 70vh; /* Adjust based on your design needs */
+}
+
+.img-container img {
+    width: 500px; /* Set your desired width */
+    height: 500px; /* Set your desired height */
+    object-fit: contain; /* Ensures the image fits within its container without distortion */
+}
+
+.info {
+    font-size: 20px;
+    color: white;
+    bottom: 10px;
+    margin-top: -80px;
+    background-color: rgb(28, 26, 26);
+    padding: 10px;
+    z-index: 1;
+}
+
+.prev, .next {
+    top: 50%;
+    width: auto;
+    margin-top: 20px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
 }

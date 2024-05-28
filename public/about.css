@@ -12,6 +12,32 @@ code {
         monospace;
 }
 
+
+header {
+    /* background: url("../images/header-bg.jpg") no-repeat center center; */
+    background-size: cover;
+    padding: 60px 0;
+}
+
+#about {
+    text-align: center;
+}
+
+#team .box {
+    margin: 15px 0;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    .box {
+        margin: 10px 0;
+    }
+}
+
 .App {
     text-align: center;
 }
