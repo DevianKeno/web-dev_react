@@ -145,6 +145,10 @@ code {
     background-color: #131720;
 }
 
+.cp-text {
+    color: #888B91;
+}
+
 .small {
     flex: 1 1 0px;
     width: 0px;

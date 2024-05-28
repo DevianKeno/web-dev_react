@@ -147,6 +147,10 @@ code {
     transition: opacity 0.2s ease-in-out;
 }
 
+.cp-text {
+    color: #888B91;
+}
+
 .d-block {
     width: 100%;
 }
