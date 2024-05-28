@@ -7,6 +7,19 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* Style for the header, paragraph, and video frame with initial state for animation */
+.animated-element {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(-50px); /* Initially shifted up */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Smooth transition */
+}
+
+/* Class to make the elements visible and animate them into place */
+.animated-element.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Original position */
+}
+
 .header {
     padding-top: 85px;
     height: 160px;
@@ -89,6 +102,11 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    transition: transform .2s;
+}
+
+.m-img:hover {
+    transform: scale(1.5);
 }
 
 .footer {
